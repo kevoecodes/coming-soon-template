@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+import page_under_construct_gif from './page_under_construction.gif';
 import './App.css';
+import {Result, Image, Row} from "antd";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Row justify={'center'} style={{ backgroundColor: '#fafafb', height: '100vh' }}>
+          <Result
+              title="Under maintenance!"
+              icon={<Image height={'50vh'} src={page_under_construct_gif} preview={false} />}
+              subTitle="Site under maintenance, will be back  very soon!"
+          />
+      </Row>
+
   );
 }
 
